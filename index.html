@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <div class="pictures">
+      <picture class="card__image">
+        <img src="images/image-equilibrium.jpg" alt="Ethereum logo">
+      </picture>
+      <picture class="image-hover">
+        <img src="images/icon-view.svg" alt="Eye icon active when user does hover">
+      </picture>
+    </div>
+      <div class="card__content">
+        <p class="card__title">Equilibrium #3429</p>
+        <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="line-group">
+          <div class="line-group__one">
+            <picture class="card__eth-icon">
+              <img src="images/icon-ethereum.svg" alt="Icon of Ethereum which is used to represent ETH value">
+            </picture>
+            <p class="card__price-value">&nbsp0.041 ETH</p>
+          </div>
+          <div class="line-group__one">
+            <picture class="card__clock-icon">
+              <img src="images/icon-clock.svg" alt="Icon of a clock">
+            </picture>
+            <p class="card__days-left">&nbsp3 days left</p>
+          </div>
+        </div>
+        <div class="card__author">
+          <picture class="card__avatar">
+            <img src="images/image-avatar.png" alt="Avatar of Jules Wyvern, the creator of this card">
+          </picture>
+          <p class="card__author__name">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Federico Caro</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

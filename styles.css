@@ -1,0 +1,137 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(217, 54%, 11%);
+}
+main{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.card{
+    position: fixed;
+    max-width: 350px;
+    font-family: Outfit;
+    border-radius: 1em;
+    padding: 1.5em;
+    background: hsl(216, 50%, 16%);
+}
+
+.pictures{
+    position: relative;
+    width: 100%;
+}
+.card__image img{
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+.image-hover {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    opacity: 0;
+    border-radius: 1rem;
+  }
+
+.image-hover img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.image-hover:hover{
+    opacity: 1;
+    background-color: #009fb4ac;
+    cursor: pointer;
+}
+
+.card__content{
+    margin-top: 1.3em;
+}
+
+.card__title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 0.9em ;
+}
+
+.card__title:hover{
+    cursor: pointer;
+    color:hsl(178, 100%, 50%)
+}
+
+.card__description{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 1.3em;
+}
+
+.line-group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+.card__price-value{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+
+.card__days-left{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    align-items: right;
+    display: inline-block;
+    
+}
+.card__author{
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 1.3em;
+    padding-top: 1em;
+    
+}
+
+.card__avatar img{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card__author__name{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.card__author__name span{
+    color: white;
+}
+
+.card__author__name span:hover{
+    cursor: pointer;
+    color:hsl(178, 100%, 50%)
+}
